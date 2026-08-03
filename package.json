@@ -1,0 +1,32 @@
+{
+  "name": "railway-vendure-commerce-template",
+  "version": "1.0.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "VENDURE_BUILD=true vendure build all",
+    "start": "node dist/index.js",
+    "start:worker": "node dist/index-worker.js",
+    "verify": "./scripts/verify.sh"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1102.0",
+    "@aws-sdk/lib-storage": "3.1102.0",
+    "@vendure/asset-server-plugin": "3.7.2",
+    "@vendure/core": "3.7.2",
+    "@vendure/dashboard": "3.7.2",
+    "@vendure/harden-plugin": "3.7.2",
+    "@vendure/job-queue-plugin": "3.7.2",
+    "bullmq": "5.81.3",
+    "dotenv": "17.4.2",
+    "ioredis": "5.11.1",
+    "pg": "8.22.0"
+  },
+  "devDependencies": {
+    "@vendure/cli": "3.7.2",
+    "railway": "3.6.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.2",
+    "vite": "7.3.1"
+  }
+}

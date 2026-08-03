@@ -1,0 +1,6 @@
+node_modules/
+dist/
+src/gql/
+.env
+static/assets/*
+!static/assets/.gitkeep
