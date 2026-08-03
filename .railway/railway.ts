@@ -74,6 +74,7 @@ export default defineRailway(() => {
       COOKIE_SECRET: "${{Vendure.COOKIE_SECRET}}",
       WORKER_HEALTH_PORT: "3020",
       WORKER_CONCURRENCY: "3",
+      API_HEALTH_URL: "http://${{Vendure.RAILWAY_PRIVATE_DOMAIN}}:3000/health",
     },
   });
 

@@ -73,6 +73,7 @@ services:
       <<: *vendure-environment
       WORKER_HEALTH_PORT: 3020
       WORKER_CONCURRENCY: 3
+      API_HEALTH_URL: http://vendure:3000/health
     healthcheck:
       test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3020/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
       interval: 10s

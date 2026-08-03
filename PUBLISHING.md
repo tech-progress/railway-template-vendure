@@ -1,6 +1,6 @@
 # Publishing
 
-The current template release is `v1.0.0`. Both application services build `tech-progress/railway-template-vendure` from `release-v1`; dependency images and the Node base are immutable digest pins.
+The current template release is `v1.0.1`. Both application services build `tech-progress/railway-template-vendure` from `release-v1`; dependency images and the Node base are immutable digest pins.
 
 Publish only after local verification, empty-volume bootstrap, administrator authentication, asset persistence, stopped-worker reindex recovery, initialized restart, and the exact stored Railway graph all pass.
 
