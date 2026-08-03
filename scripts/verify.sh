@@ -37,7 +37,8 @@ jq -e '
   ([.[] | select(.name=="Vendure")][0].source.repo == "tech-progress/railway-template-vendure") and
   ([.[] | select(.name=="Vendure")][0].source.branch == "release-v1") and
   ([.[] | select(.name=="Vendure")][0].deploy.healthcheckPath == "/health") and
-  ([.[] | select(.name=="Vendure Worker")][0].deploy.healthcheckPath == "/health")
+  ([.[] | select(.name=="Vendure Worker")][0].deploy.healthcheckPath == "/health") and
+  ([.[] | select(.name=="Vendure Worker")][0].variables.PORT.value == "3020")
 ' <<<"${graph}" >/dev/null
 
 grep -Fq 'https://www.vendure.io' "${template_root}/README.md"
