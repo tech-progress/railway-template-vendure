@@ -4,7 +4,7 @@ Vendure is a headless commerce platform with Shop and Admin GraphQL APIs, a mode
 
 ## About Hosting Vendure commerce
 
-This template runs Vendure 3.7.2 with a public API and compiled Dashboard, a private BullMQ worker, PostgreSQL, authenticated Redis, and a private Railway Bucket for original assets and previews.
+This template runs Vendure 3.7.3 with a public API and compiled Dashboard, a private BullMQ worker, PostgreSQL, authenticated Redis, and a private Railway Bucket for original assets and previews.
 
 ## Why Deploy Vendure commerce on Railway
 

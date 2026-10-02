@@ -1,6 +1,6 @@
 # Vendure commerce Railway template
 
-The current template release is `v1.0.2`. It deploys Vendure `3.7.2` with the Admin Dashboard, a detached BullMQ worker, PostgreSQL 17, authenticated Redis 7.2, and durable object storage. Runtime images are pinned by digest.
+The current template release is `v1.0.3`. It deploys Vendure `3.7.3` on Node `22.23.3` Bookworm slim with the Admin Dashboard, a detached BullMQ worker, PostgreSQL 17, authenticated Redis `7.2.16` Alpine, and durable object storage. Runtime images are pinned by digest.
 
 Upstream project: [Vendure](https://www.vendure.io).
 

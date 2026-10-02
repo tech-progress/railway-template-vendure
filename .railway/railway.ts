@@ -5,7 +5,7 @@ const SOURCE = github("tech-progress/railway-template-vendure", {
   rootDirectory: "/",
 });
 const POSTGRES_IMAGE = "postgres:17-alpine@sha256:742f40ea20b9ff2ff31db5458d127452988a2164df9e17441e191f3b72252193";
-const REDIS_IMAGE = "redis:7.2.4-alpine@sha256:c8bb255c3559b3e458766db810aa7b3c7af1235b204cfdb304e79ff388fe1a5a";
+const REDIS_IMAGE = "redis:7.2.16-alpine@sha256:29e8589c3f9ba699b5f7aa4b3c7733c58852a3626439e619aa0ee78de08c6ca0";
 
 export default defineRailway(() => {
   const databaseData = volume("Vendure PostgreSQL Data", { sizeMB: 5_000 });
