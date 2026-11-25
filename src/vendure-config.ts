@@ -9,7 +9,6 @@ import {
   DefaultSearchPlugin,
   dummyPaymentHandler,
   RedisCachePlugin,
-  TypeORMHealthCheckStrategy,
   VendureConfig,
 } from '@vendure/core';
 import { DashboardPlugin } from '@vendure/dashboard/plugin';
@@ -63,9 +62,6 @@ export const config: VendureConfig = {
     logging: false,
   },
   paymentOptions: { paymentMethodHandlers: [dummyPaymentHandler] },
-  systemOptions: {
-    healthChecks: [new TypeORMHealthCheckStrategy({ key: 'postgres', timeout: 5000 })],
-  },
   plugins: [
     AssetServerPlugin.init({
       route: 'assets',

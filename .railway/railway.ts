@@ -1,11 +1,11 @@
 import { bucket, defineRailway, github, group, project, ref, service, volume } from "railway/iac";
 
 const SOURCE = github("tech-progress/railway-template-vendure", {
-  branch: "release-v1",
+  branch: "release-v2",
   rootDirectory: "/",
 });
-const POSTGRES_IMAGE = "postgres:17-alpine@sha256:742f40ea20b9ff2ff31db5458d127452988a2164df9e17441e191f3b72252193";
-const REDIS_IMAGE = "redis:7.2.16-alpine@sha256:29e8589c3f9ba699b5f7aa4b3c7733c58852a3626439e619aa0ee78de08c6ca0";
+const POSTGRES_IMAGE = "postgres:17.12-alpine@sha256:f9cf3e1f0066f0eb0c48707d864f0ac5941e9ff454a072077d97a4d278d07d73";
+const REDIS_IMAGE = "redis:7.2.17-alpine@sha256:2f66de68111e64c3927859f158f8e666066dae2b97d9f82770a6f37a5aa1c335";
 
 export default defineRailway(() => {
   const databaseData = volume("Vendure PostgreSQL Data", { sizeMB: 5_000 });
